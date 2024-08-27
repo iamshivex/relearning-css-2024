@@ -1,0 +1,19 @@
+h2 { /* element selector */
+  color: cyan;
+}
+
+.subtitle { /* class selector */
+  color: blue;
+}
+
+#services { /* id selector */
+  color: green;
+}
+
+li:only-child {
+  color: purple;
+}
+
+ul > li {
+  color: blueviolet;
+}

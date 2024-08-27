@@ -1,0 +1,123 @@
+Specificity
+  inline styling > id > class > element
+class is typically used for more than one element
+  while id is typically used for a single element
+
+Types of units
+  1. Absolute: These aren't affected by anything around them
+  2. Relative: These are affected by the elements around them
+
+/ read up specificity - Done!
+/ read up measurements - Done!
+
+Text manipulations
+  text-align: used to position texts just like in word apps
+  font-weight: used for bolding
+  font-style: used for italicising
+  font-family: used for specifying the fonts
+    sans-serif fonts: typicallys used for websites
+    serif: typically used for printed works
+    monospace: the letters have same widths
+  importing fonts
+    paste links above stylesheets
+
+The Box Model
+  border: size style color;
+  padding: top right bottom left
+  margin: top right bottom left
+  padding: topbottom rightleft
+  margin: topbottom rightleft
+
+Flexbox
+  Flexbox is split into two main parts; the container and the the items
+  The container is the parent type in which the display type is active (e.g div)
+  Flex items are child eleents of the container and make up the contents of the box (e.g span, img etc)
+  Activation - display: flex;
+  flex-direction: used to flex items horizontally or vertically or reverse in the container
+  justify-content: horizontal alignment in the flex container
+  {
+    flex-start: left
+    flex-end: right
+    center: middle
+    space-between: spacing in the middle of the contents only
+    space-around: spacing in and out of the contents
+  }
+  align-items: vertical alignment in the flex container
+  {
+    flex-start: top
+    flex-end: bottom
+  }
+  flex: {grow shrink basis}
+  align-self: used to flex items themselves
+
+Flexbox vs Grid
+  Grid is more manual, providing more tools to layout the container in a specific way
+  Grid is also more focused on tools for both width and height whereas
+    Flexbox is focused on width alone
+
+Grid
+  grid-template-columns: used to specify number of grids columns
+  grid-template-rows: used to specify number of grids rows
+  grid-column-gap: used to specify the gaps between the columns of each grid items
+  grid-row-gap: used to specify the gaps between the columns of each grid items
+  grid-gap: row column;
+  justify-content: horizontal alignment in the grid container
+  {
+   start: left
+   end: right
+   space-evenly: equal spacing before and after each grid item
+   space-around: spacing in and out of the items (more spacing btwn the items)
+  }
+  align-content: vertical alignment in the grid container
+  {
+    start: top
+    end: bottom
+    space-between: spacing in the middle of the contents only
+    space-evenly: equal spacing before and after each grid item
+    space-around: spacing in and out of the items (more spacing btwn the items)
+  }
+  grid-column: used to horizontally specify the start and end points of the grid item lines 
+  grid-row: used to vertically specify the start and end points of the grid item lines 
+  grid-column: number / {span number}
+  grid-row: number / {span number}
+  grid-area: row starting point / column starting point / row end point / column end point
+
+// It is much easier to work with grid items themselves than grid containers?
+
+Transition
+  transition: property duration change delay
+
+Transform
+  transform: translate(Xpx Ypx) - to move the item to specific x and y positions
+  transform: scale(number) - to increase or reduce the item size
+  transform: rotate(degrees) - to change the rotation of the item
+
+Animations
+  @keyframes animation-name {
+    from  {property: }
+    to {property: }
+
+    OR
+    0% {property: }
+    50% {property: }
+    100% {property: }
+  }
+
+  Application
+    .class {
+      animation-name: animation-name;
+      animation-duration: seconds (important for the animation to run)
+      animation-timing-function: (similar to the "change" in the transform)
+      animation-iteration-count: (number of times the animation should iterate)
+      animation-direction: (starting and ending points of the animation)
+    }
+
+  Shorthand
+    animation: name duration timing-function delay iteration-count direction
+
+Browser support
+  -webkit- (chrome safari)
+  -moz- (mozilla firefox)
+  -o- (opera)
+
+// Keep animations at the bottom of the style page
